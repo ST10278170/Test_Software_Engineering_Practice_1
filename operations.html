@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Oakwood Pharmacy | Suppliers & Insurance</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="brand">
+                <h1>Oakwood</h1>
+                <p>Pharmacy Management</p>
+            </div>
+
+            <nav class="navigation">
+                <a href="index.html" class="nav-link">Dashboard</a>
+                <a href="inventory.html" class="nav-link">Inventory</a>
+                <a href="pos.html" class="nav-link">Point of Sale</a>
+                <a href="operations.html" class="nav-link active">
+                    Suppliers & Insurance
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <p>Oakwood Pharmacy</p>
+                <span>Serving our community for over 20 years</span>
+            </div>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- Header -->
+            <header class="top-header">
+
+                <div>
+                    <p class="page-label">EXTERNAL OPERATIONS</p>
+                    <h2>Suppliers & Insurance</h2>
+
+                    <p class="welcome-text">
+                        Monitor supplier orders and insurance claims from one workspace.
+                    </p>
+                </div>
+
+                <div class="staff-profile">
+                    <div>
+                        <span class="staff-name">Pharmacy Staff</span>
+                        <span class="staff-role">Administrator</span>
+                    </div>
+                </div>
+
+            </header>
+
+
+            <!-- Summary -->
+            <section class="operations-summary">
+
+                <article class="operation-stat">
+                    <span>Open Supplier Orders</span>
+                    <strong>12</strong>
+                    <small>Awaiting delivery or confirmation</small>
+                </article>
+
+                <article class="operation-stat warning-stat">
+                    <span>Pending Deliveries</span>
+                    <strong>5</strong>
+                    <small>Orders currently in progress</small>
+                </article>
+
+                <article class="operation-stat">
+                    <span>Insurance Claims</span>
+                    <strong>24</strong>
+                    <small>Claims currently monitored</small>
+                </article>
+
+                <article class="operation-stat success-stat">
+                    <span>Approved Claims</span>
+                    <strong>18</strong>
+                    <small>Successfully processed claims</small>
+                </article>
+
+            </section>
+
+
+            <!-- Supplier Orders -->
+            <section class="panel operations-section">
+
+                <div class="operations-heading">
+
+                    <div>
+                        <p class="section-label">SUPPLIER MANAGEMENT</p>
+                        <h3>Supplier Orders</h3>
+
+                        <p>
+                            Track medicine replenishment and order progress.
+                        </p>
+                    </div>
+
+                    <button type="button" class="primary-button">
+                        + Create Supplier Order
+                    </button>
+
+                </div>
+
+
+                <div class="table-container">
+
+                    <table class="operations-table">
+
+                        <thead>
+                            <tr>
+                                <th scope="col">Order</th>
+                                <th scope="col">Supplier</th>
+                                <th scope="col">Items</th>
+                                <th scope="col">Order Date</th>
+                                <th scope="col">Expected Delivery</th>
+                                <th scope="col">Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>
+                                    <strong>PO-2026-1048</strong>
+                                </td>
+
+                                <td>
+                                    MedCore Distribution
+                                </td>
+
+                                <td>
+                                    14 medicines
+                                </td>
+
+                                <td>
+                                    30 Oct 2026
+                                </td>
+
+                                <td>
+                                    04 Nov 2026
+                                </td>
+
+                                <td>
+                                    <span class="status processing">
+                                        In Transit
+                                    </span>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>
+                                    <strong>PO-2026-1049</strong>
+                                </td>
+
+                                <td>
+                                    Prime Health Supplies
+                                </td>
+
+                                <td>
+                                    8 medicines
+                                </td>
+
+                                <td>
+                                    01 Nov 2026
+                                </td>
+
+                                <td>
+                                    06 Nov 2026
+                                </td>
+
+                                <td>
+                                    <span class="status pending">
+                                        Pending
+                                    </span>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>
+                                    <strong>PO-2026-1042</strong>
+                                </td>
+
+                                <td>
+                                    Apex Pharmaceutical Supply
+                                </td>
+
+                                <td>
+                                    21 medicines
+                                </td>
+
+                                <td>
+                                    25 Oct 2026
+                                </td>
+
+                                <td>
+                                    31 Oct 2026
+                                </td>
+
+                                <td>
+                                    <span class="status approved">
+                                        Delivered
+                                    </span>
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- Insurance Claims -->
+            <section class="panel operations-section">
+
+                <div class="operations-heading">
+
+                    <div>
+                        <p class="section-label">INSURANCE PROCESSING</p>
+                        <h3>Insurance Claims</h3>
+
+                        <p>
+                            Monitor submitted healthcare claims and their processing status.
+                        </p>
+                    </div>
+
+                    <button type="button" class="secondary-button">
+                        + New Insurance Claim
+                    </button>
+
+                </div>
+
+
+                <div class="table-container">
+
+                    <table class="operations-table">
+
+                        <thead>
+                            <tr>
+                                <th scope="col">Claim</th>
+                                <th scope="col">Patient</th>
+                                <th scope="col">Provider</th>
+                                <th scope="col">Amount</th>
+                                <th scope="col">Submitted</th>
+                                <th scope="col">Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>
+                                    <strong>CLM-20841</strong>
+                                </td>
+
+                                <td>
+                                    Patient #1842
+                                </td>
+
+                                <td>
+                                    HealthSure
+                                </td>
+
+                                <td>
+                                    ₦24,800
+                                </td>
+
+                                <td>
+                                    02 Nov 2026
+                                </td>
+
+                                <td>
+                                    <span class="status pending">
+                                        Pending Review
+                                    </span>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>
+                                    <strong>CLM-20837</strong>
+                                </td>
+
+                                <td>
+                                    Patient #1731
+                                </td>
+
+                                <td>
+                                    Unity Health
+                                </td>
+
+                                <td>
+                                    ₦18,450
+                                </td>
+
+                                <td>
+                                    01 Nov 2026
+                                </td>
+
+                                <td>
+                                    <span class="status approved">
+                                        Approved
+                                    </span>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>
+                                    <strong>CLM-20829</strong>
+                                </td>
+
+                                <td>
+                                    Patient #1624
+                                </td>
+
+                                <td>
+                                    CarePlus Insurance
+                                </td>
+
+                                <td>
+                                    ₦31,200
+                                </td>
+
+                                <td>
+                                    29 Oct 2026
+                                </td>
+
+                                <td>
+                                    <span class="status review">
+                                        Information Required
+                                    </span>
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <p class="operations-note">
+                Supplier, insurance and patient information shown is fictional demonstration data created for this prototype.
+            </p>
+
+        </main>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

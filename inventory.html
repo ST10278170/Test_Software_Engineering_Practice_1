@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Oakwood Pharmacy | Inventory</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="brand">
+                <h1>Oakwood</h1>
+                <p>Pharmacy Management</p>
+            </div>
+
+            <nav class="navigation">
+                <a href="index.html" class="nav-link">Dashboard</a>
+                <a href="inventory.html" class="nav-link active">Inventory</a>
+                <a href="pos.html" class="nav-link">Point of Sale</a>
+                <a href="operations.html" class="nav-link">
+                    Suppliers & Insurance
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <p>Oakwood Pharmacy</p>
+                <span>Serving our community for over 20 years</span>
+            </div>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- Header -->
+            <header class="top-header">
+
+                <div>
+                    <p class="page-label">STOCK CONTROL</p>
+                    <h2>Inventory Management</h2>
+                    <p class="welcome-text">
+                        Monitor medicine stock levels, availability and expiration dates.
+                    </p>
+                </div>
+
+                <div class="staff-profile">
+                    <div>
+                        <span class="staff-name">Pharmacy Staff</span>
+                        <span class="staff-role">Administrator</span>
+                    </div>
+                </div>
+
+            </header>
+
+
+            <!-- Inventory Summary -->
+            <section class="summary-grid">
+
+                <article class="summary-card">
+                    <p>Total Medicines</p>
+                    <h3>1,248</h3>
+                    <span>Medicines currently monitored</span>
+                </article>
+
+                <article class="summary-card warning">
+                    <p>Low Stock</p>
+                    <h3>18</h3>
+                    <span>Items require restocking</span>
+                </article>
+
+                <article class="summary-card danger">
+                    <p>Expiring Soon</p>
+                    <h3>7</h3>
+                    <span>Medicines require review</span>
+                </article>
+
+                <article class="summary-card success">
+                    <p>Stock Available</p>
+                    <h3>1,223</h3>
+                    <span>Items currently available</span>
+                </article>
+
+            </section>
+
+
+            <!-- Inventory Panel -->
+            <section class="panel inventory-panel">
+
+                <!-- Panel Header -->
+                <div class="inventory-toolbar">
+
+                    <div>
+                        <p class="section-label">MEDICINE INVENTORY</p>
+                        <h3>Current Stock</h3>
+                    </div>
+
+                    <button type="button" class="primary-button">
+                        + Add Medicine
+                    </button>
+
+                </div>
+
+
+                <!-- Search and Filters -->
+                <div class="inventory-controls">
+
+                    <div class="search-box">
+                        <label for="inventory-search">Search Inventory</label>
+
+                        <input
+                            type="search"
+                            id="inventory-search"
+                            placeholder="Search medicine name or category"
+                        >
+                    </div>
+
+                    <div class="filter-box">
+                        <label for="stock-filter">Stock Status</label>
+
+                        <select id="stock-filter">
+                            <option>All Stock</option>
+                            <option>Available</option>
+                            <option>Low Stock</option>
+                            <option>Expiring Soon</option>
+                        </select>
+                    </div>
+
+                </div>
+
+
+                <!-- Inventory Table -->
+                <div class="table-container">
+
+                    <table class="inventory-table">
+
+                        <thead>
+                            <tr>
+                                <th>Medicine</th>
+                                <th>Category</th>
+                                <th>Stock</th>
+                                <th>Reorder Level</th>
+                                <th>Expiry Date</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>
+                                    <strong>Amoxicillin 500mg</strong>
+                                    <span>MED-00124</span>
+                                </td>
+
+                                <td>Antibiotic</td>
+
+                                <td>
+                                    <strong>8</strong> units
+                                </td>
+
+                                <td>20 units</td>
+
+                                <td>18 Mar 2027</td>
+
+                                <td>
+                                    <span class="status low">
+                                        Low Stock
+                                    </span>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>
+                                    <strong>Paracetamol 500mg</strong>
+                                    <span>MED-00042</span>
+                                </td>
+
+                                <td>Pain Relief</td>
+
+                                <td>
+                                    <strong>12</strong> units
+                                </td>
+
+                                <td>30 units</td>
+
+                                <td>22 Sep 2027</td>
+
+                                <td>
+                                    <span class="status low">
+                                        Low Stock
+                                    </span>
+                                </td>
+                            </tr>
+
+
+                            <tr class="expiry-row">
+                                <td>
+                                    <strong>Cough Syrup 100ml</strong>
+                                    <span>MED-00218</span>
+                                </td>
+
+                                <td>Cold & Flu</td>
+
+                                <td>
+                                    <strong>34</strong> units
+                                </td>
+
+                                <td>15 units</td>
+
+                                <td>
+                                    <strong>28 Nov 2026</strong>
+                                </td>
+
+                                <td>
+                                    <span class="status expiry">
+                                        Expiring Soon
+                                    </span>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>
+                                    <strong>Vitamin C 1000mg</strong>
+                                    <span>MED-00301</span>
+                                </td>
+
+                                <td>Supplements</td>
+
+                                <td>
+                                    <strong>76</strong> units
+                                </td>
+
+                                <td>20 units</td>
+
+                                <td>15 Jun 2028</td>
+
+                                <td>
+                                    <span class="status available">
+                                        Available
+                                    </span>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>
+                                    <strong>Ibuprofen 200mg</strong>
+                                    <span>MED-00176</span>
+                                </td>
+
+                                <td>Pain Relief</td>
+
+                                <td>
+                                    <strong>58</strong> units
+                                </td>
+
+                                <td>25 units</td>
+
+                                <td>04 Feb 2028</td>
+
+                                <td>
+                                    <span class="status available">
+                                        Available
+                                    </span>
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                <p class="prototype-note">
+                    Inventory records shown are demonstration data for the Oakwood Pharmacy prototype.
+                </p>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Oakwood Pharmacy | Point of Sale</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="brand">
+                <h1>Oakwood</h1>
+                <p>Pharmacy Management</p>
+            </div>
+
+            <nav class="navigation">
+                <a href="index.html" class="nav-link">Dashboard</a>
+                <a href="inventory.html" class="nav-link">Inventory</a>
+                <a href="pos.html" class="nav-link active">Point of Sale</a>
+                <a href="operations.html" class="nav-link">
+                    Suppliers & Insurance
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <p>Oakwood Pharmacy</p>
+                <span>Serving our community for over 20 years</span>
+            </div>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- Header -->
+            <header class="top-header">
+
+                <div>
+                    <p class="page-label">SALES & BILLING</p>
+                    <h2>Point of Sale</h2>
+                    <p class="welcome-text">
+                        Process pharmacy sales, billing and digital payments.
+                    </p>
+                </div>
+
+                <div class="staff-profile">
+                    <div>
+                        <span class="staff-name">Pharmacy Staff</span>
+                        <span class="staff-role">Administrator</span>
+                    </div>
+                </div>
+
+            </header>
+
+
+            <!-- POS Layout -->
+            <section class="pos-grid">
+
+                <!-- Left Side -->
+                <div class="pos-left">
+
+                    <!-- Medicine Search -->
+                    <article class="panel">
+
+                        <div class="panel-header">
+                            <div>
+                                <p class="section-label">MEDICINE SEARCH</p>
+                                <h3>Add Items to Sale</h3>
+                            </div>
+                        </div>
+
+                        <div class="pos-search">
+
+                            <label for="medicine-search">
+                                Search Medicine
+                            </label>
+
+                            <div class="search-action-row">
+
+                                <input
+                                    type="search"
+                                    id="medicine-search"
+                                    placeholder="Search by medicine name or product code"
+                                >
+
+                                <button type="button" class="primary-button">
+                                    Search
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Current Sale -->
+                    <article class="panel sale-panel">
+
+                        <div class="panel-header">
+
+                            <div>
+                                <p class="section-label">CURRENT TRANSACTION</p>
+                                <h3>Sale Items</h3>
+                            </div>
+
+                            <span class="transaction-id">
+                                Sale #POS-10482
+                            </span>
+
+                        </div>
+
+
+                        <div class="table-container">
+
+                            <table class="sale-table">
+
+                                <thead>
+                                    <tr>
+                                        <th>Medicine</th>
+                                        <th>Qty</th>
+                                        <th>Unit Price</th>
+                                        <th>Total</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+
+                                    <tr>
+                                        <td>
+                                            <strong>
+                                                Paracetamol 500mg
+                                            </strong>
+
+                                            <span>
+                                                MED-00042
+                                            </span>
+                                        </td>
+
+                                        <td>
+                                            <input
+                                                type="number"
+                                                value="2"
+                                                min="1"
+                                                class="quantity-input"
+                                                aria-label="Paracetamol quantity"
+                                            >
+                                        </td>
+
+                                        <td>₦1,250</td>
+
+                                        <td>
+                                            <strong>₦2,500</strong>
+                                        </td>
+
+                                        <td>
+                                            <button
+                                                type="button"
+                                                class="remove-button"
+                                                aria-label="Remove Paracetamol from sale">
+                                                Remove
+                                            </button>
+                                        </td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>
+                                            <strong>
+                                                Vitamin C 1000mg
+                                            </strong>
+
+                                            <span>
+                                                MED-00301
+                                            </span>
+                                        </td>
+
+                                        <td>
+                                            <input
+                                                type="number"
+                                                value="1"
+                                                min="1"
+                                                class="quantity-input"
+                                                aria-label="Vitamin C quantity"
+                                            >
+                                        </td>
+
+                                        <td>₦3,800</td>
+
+                                        <td>
+                                            <strong>₦3,800</strong>
+                                        </td>
+
+                                        <td>
+                                            <button
+                                                type="button"
+                                                class="remove-button"
+                                                aria-label="Remove Vitamin C from sale">
+                                                Remove
+                                            </button>
+                                        </td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>
+                                            <strong>
+                                                Ibuprofen 200mg
+                                            </strong>
+
+                                            <span>
+                                                MED-00176
+                                            </span>
+                                        </td>
+
+                                        <td>
+                                            <input
+                                                type="number"
+                                                value="1"
+                                                min="1"
+                                                class="quantity-input"
+                                                aria-label="Ibuprofen quantity"
+                                            >
+                                        </td>
+
+                                        <td>₦2,100</td>
+
+                                        <td>
+                                            <strong>₦2,100</strong>
+                                        </td>
+
+                                        <td>
+                                            <button
+                                                type="button"
+                                                class="remove-button"
+                                                aria-label="Remove Ibuprofen from sale">
+                                                Remove
+                                            </button>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- Right Side: Checkout -->
+                <aside class="checkout-panel">
+
+                    <div class="checkout-header">
+                        <p class="section-label">CHECKOUT</p>
+                        <h3>Payment Summary</h3>
+                    </div>
+
+
+                    <!-- Customer -->
+                    <div class="checkout-section">
+
+                        <label for="customer-name">
+                            Customer
+                        </label>
+
+                        <input
+                            type="text"
+                            id="customer-name"
+                            placeholder="Walk-in customer"
+                        >
+
+                    </div>
+
+
+                    <!-- Billing Totals -->
+                    <div class="billing-summary">
+
+                        <div class="billing-row">
+                            <span>Subtotal</span>
+                            <strong>₦8,400</strong>
+                        </div>
+
+                        <div class="billing-row">
+                            <span>Discount</span>
+                            <strong>₦0</strong>
+                        </div>
+
+                        <div class="billing-row">
+                            <span>Tax</span>
+                            <strong>₦630</strong>
+                        </div>
+
+                        <div class="billing-row total-row">
+                            <span>Total</span>
+                            <strong>₦9,030</strong>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Payment Method -->
+                    <div class="payment-section">
+
+                        <p class="payment-title">
+                            Payment Method
+                        </p>
+
+                        <label class="payment-option">
+                            <input
+                                type="radio"
+                                name="payment"
+                                value="pos"
+                                checked
+                            >
+
+                            <span>
+                                <strong>POS Card Payment</strong>
+                                <small>
+                                    Pay using debit or credit card
+                                </small>
+                            </span>
+                        </label>
+
+
+                        <label class="payment-option">
+                            <input
+                                type="radio"
+                                name="payment"
+                                value="transfer"
+                            >
+
+                            <span>
+                                <strong>Bank Transfer</strong>
+                                <small>
+                                    Confirm digital bank transfer
+                                </small>
+                            </span>
+                        </label>
+
+
+                        <label class="payment-option">
+                            <input
+                                type="radio"
+                                name="payment"
+                                value="cash"
+                            >
+
+                            <span>
+                                <strong>Cash</strong>
+                                <small>
+                                    Record physical cash payment
+                                </small>
+                            </span>
+                        </label>
+
+                    </div>
+
+
+                    <!-- Checkout Button -->
+                    <button
+                        type="button"
+                        class="complete-sale-button">
+                        Complete Sale • ₦9,030
+                    </button>
+
+
+                    <p class="sync-message">
+                        Sale completion will update the associated inventory record.
+                    </p>
+
+                </aside>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
